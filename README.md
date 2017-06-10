@@ -6,6 +6,8 @@ Carthage makes it easy to implement secure messaging into your app.
 
 1. [Requirements](#requirements)
 2. [Integration](#integration)
+   - [Installation](#installation)
+   - [Setting up Xcode](#setting-up-xcode)
 3. [Usage](#usage)
    - [Initialization](#initialization)
    - [Subscript](#subscript)
@@ -27,6 +29,8 @@ Carthage makes it easy to implement secure messaging into your app.
 - Xcode 8
 
 ## Integration
+
+### Installation
 
 #### CocoaPods (iOS 8.0+)
 
@@ -54,9 +58,12 @@ You can use [Carthage](https://github.com/Carthage/Carthage) to install `Cashew`
 github "Loment/sdk-cashew-ios"
 ```
 
-### Xcode
-* Open project or workspace file after integrating SDK
-* In Info.plist file add below properties
+### Setting Up Xcode
+
+In order to use the Cashew SDK, follow the following steps to set up your Xcode environment:
+
+1. Open project or workspace file after [installing](#installation) SDK
+2. In Info.plist file add the following properties with their appropriate URLs (including port numbers):
   * AMQP_MESSAGE_QUEUE_HOSTNAME
   * AMQP_REQUEST_QUEUE_HOSTNAME
   * AMQP_RESPONSE_QUEUE_HOSTNAME
@@ -64,21 +71,17 @@ github "Loment/sdk-cashew-ios"
   * HTTP_ATTACHMENT_SERVER_URL
   * HTTP_DIGEST_REALM
 
-Fill the values for the Keys with appropriate URL's along with port numbers.
-
-* Please include below lines of code in App delegate file in the method 
+3. Include the following lines of code in your ```application:didFinishLaunchingWithOptions:`` method:
 
 ```objc
-- (BOOL)application:(UIApplication *)application 
-   didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-...
-NSString * clientId = <<Please contact Loment Support for the values>>;
-NSString * partnerId = <<Please contact Loment Support for the values>>;
-[CNMUserServices registerWithSDK:clientId partnerId:partnerId];
-...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   
+    // set up app
+    //...
+    NSString * clientId = // Please contact Loment Support for value;
+    NSString * partnerId = // Please contact Loment Support for value;
+    [CNMUserServices registerWithSDK:clientId partnerId:partnerId];
 }
 ```
 
-* One above steps are done then you are authorized to use framework and its related functionality.
-* In case of any Queries or support please contact Loment team for support support@loment.net 
+Once the above steps are done then you are authorized to use the Cashew SDK and its related functionality. For questions or support please contact the Loment team at support@loment.net.
