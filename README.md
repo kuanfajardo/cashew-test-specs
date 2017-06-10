@@ -62,20 +62,36 @@ github "Loment/sdk-cashew-ios"
 
 In order to use the Cashew SDK, follow the following steps to set up your Xcode environment:
 
-1. Open project or workspace file after [installing](#installation) SDK
-2. In Info.plist file add the following properties with their appropriate URLs (including port numbers):
-  * AMQP_MESSAGE_QUEUE_HOSTNAME
-  * AMQP_REQUEST_QUEUE_HOSTNAME
-  * AMQP_RESPONSE_QUEUE_HOSTNAME
-  * CN_BASE_API_URL
-  * HTTP_ATTACHMENT_SERVER_URL
-  * HTTP_DIGEST_REALM
+1. Open project or workspace file after [installing SDK](#installation)
+2. In ```Info.plist``` file add the following properties with their appropriate URLs (including port numbers):
+```
+AMQP_MESSAGE_QUEUE_HOSTNAME
+```
 
-3. Include the following lines of code in your ```application:didFinishLaunchingWithOptions:`` method:
+```
+AMQP_REQUEST_QUEUE_HOSTNAME
+```
+
+```
+AMQP_RESPONSE_QUEUE_HOSTNAME
+```
+
+```
+CN_BASE_API_URL
+```
+
+```
+HTTP_ATTACHMENT_SERVER_URL
+```
+
+```
+HTTP_DIGEST_REALM
+```
+
+3. Include the following lines of code in the ```application:didFinishLaunchingWithOptions:``` method of ```AppDelegate.m```:
 
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
     // set up app
     //...
     NSString * clientId = // Please contact Loment Support for value;
@@ -85,3 +101,6 @@ In order to use the Cashew SDK, follow the following steps to set up your Xcode 
 ```
 
 Once the above steps are done then you are authorized to use the Cashew SDK and its related functionality. For questions or support please contact the Loment team at support@loment.net.
+
+## Usage
+
