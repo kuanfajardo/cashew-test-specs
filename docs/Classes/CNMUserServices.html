@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CNMUserServices Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Loment Messaging SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Loment</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/addCashewAccount:forUser:withCompletion:">+ addCashewAccount:forUser:withCompletion:</option>
+		
+		<option value="//api/name/authenticateUser:withPassword:withCompletion:">+ authenticateUser:withPassword:withCompletion:</option>
+		
+		<option value="//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:">+ changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:</option>
+		
+		<option value="//api/name/changepasswordForEmail:withNewPassword:withCompletion:">+ changepasswordForEmail:withNewPassword:withCompletion:</option>
+		
+		<option value="//api/name/recoverPasswordForEmail:withCompletion:">+ recoverPasswordForEmail:withCompletion:</option>
+		
+		<option value="//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:">+ registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</option>
+		
+		<option value="//api/name/registerWithSDK:partnerId:">+ registerWithSDK:partnerId:</option>
+		
+		<option value="//api/name/verifySubscriptionForUser:withCompletion:">+ verifySubscriptionForUser:withCompletion:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CNMUserServices Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CNMUserServices.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class provides all the necessary methods required to work with a Loment account. It includes methods to register &amp; authenticate
+as well as methods to initiate password recovery, verify current subscription and lastly add Cashew messaging accounts to the Loment
+account.</p>
+
+<p>Special note on authenticate, it will automatically verify your subscription, so error messages indicating invalid subscription may be returned here.</p>
+
+<p>The two major workflows are either Register-Login or Login. It is up to users of the SDK to create a seamless user interaction to achieve registration / login.</p>
+
+<p>Lastly, in order to properly use the messaging SDK, the SDK must be provided with a CMNCashewAccount, this can only be obtained after validating login of the Loment
+account. Once you receive a valid <a href="../Classes/CNMUser.html">CNMUser</a> from login, use the desired <a href="../Classes/CNMCashewAccount.html">CNMCashewAccount</a> with the <a href="../Classes/CNMMessagingServices.html">CNMMessagingServices</a> interface to begin using the messaging framework.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerWithSDK:partnerId:" title="registerWithSDK:partnerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerWithSDK:partnerId:">+&nbsp;registerWithSDK:partnerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)registerWithSDK:(NSString *)<em>clientId</em> partnerId:(NSString *)<em>partnerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clientId</code></th>
+						<td><p>Your client Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>partnerId</code></th>
+						<td><p>Your partner Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if it succeeds, NO if not. Ensure all your provided data is correct</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>In order to properly use the SDK, one must register with SDK by call this method. The method is a prereq to all other methods in the SDK</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:" title="registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:">+&nbsp;registerUserWithName:withPassword:withEmail:withPhone:withIsoCode:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register a new user. To must excplictly call login after. See class description for more details.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerUserWithName:(NSString *)<em>name</em> withPassword:(NSString *)<em>password</em> withEmail:(NSString *)<em>email</em> withPhone:(NSString *)<em>phone</em> withIsoCode:(NSString *)<em>isoCode</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>This is the user&rsquo;s name (i.e. John Smith)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>User&rsquo;s password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>User&rsquo;s email. This will be their Loment ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phone</code></th>
+						<td><p>User&rsquo;s phone number. Must be prefixed with correct country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isoCode</code></th>
+						<td><p>iso code for country of phone number provided</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block executed when the network block completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Register a new user. To must excplictly call login after. See class description for more details.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authenticateUser:withPassword:withCompletion:" title="authenticateUser:withPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authenticateUser:withPassword:withCompletion:">+&nbsp;authenticateUser:withPassword:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authenticate user to start communicating with the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)authenticateUser:(NSString *)<em>email</em> withPassword:(NSString *)<em>password</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>User&rsquo;s email</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>User&rsquo;s password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block executed when the network block completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Authenticate user to start communicating with the server.</p>
+
+<p>Completion block returns <a href="../Classes/CNMUser.html">CNMUser</a> on success. After login success, allow user to pick desired <a href="../Classes/CNMCashewAccount.html">CNMCashewAccount</a> from list of available accounts,
+pass that selected account to MessagingServices to begin Loment Messaging.</p>
+
+<p>See <a href="../Blocks/CNMUserServicesCompletion.html">CNMUserServicesCompletion</a> for more details</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recoverPasswordForEmail:withCompletion:" title="recoverPasswordForEmail:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recoverPasswordForEmail:withCompletion:">+&nbsp;recoverPasswordForEmail:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends recover password email to the specified email address</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)recoverPasswordForEmail:(NSString *)<em>email</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email address to the recover password email to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block excuted when the network block completes (<a href="../Classes/CNMUser.html">CNMUser</a> will not be set)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends recover password email to the specified email address</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changepasswordForEmail:withNewPassword:withCompletion:" title="changepasswordForEmail:withNewPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changepasswordForEmail:withNewPassword:withCompletion:">+&nbsp;changepasswordForEmail:withNewPassword:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)changepasswordForEmail:(NSString *)<em>email</em> withNewPassword:(NSString *)<em>newpassword</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email address to the change password for email to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpassword</code></th>
+						<td><p>New password to be set for the account.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block excuted when the network block completes (<a href="../Classes/CNMUser.html">CNMUser</a> will not be set)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:" title="changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:">+&nbsp;changepasswordForEmail:withCurrentPassword:andNewPassword:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)changepasswordForEmail:(NSString *)<em>email</em> withCurrentPassword:(NSString *)<em>currentpassword</em> andNewPassword:(NSString *)<em>newpassword</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email address to the change password for email to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currentpassword</code></th>
+						<td><p>current password for the account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpassword</code></th>
+						<td><p>New password to be set for the account.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block excuted when the network block completes (<a href="../Classes/CNMUser.html">CNMUser</a> will not be set)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends Changepassword password email to the specified email address</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addCashewAccount:forUser:withCompletion:" title="addCashewAccount:forUser:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addCashewAccount:forUser:withCompletion:">+&nbsp;addCashewAccount:forUser:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates the Cashew Username for the specified user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addCashewAccount:(NSString *)<em>cashewUsername</em> forUser:(CNMUser *)<em>user</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cashewUsername</code></th>
+						<td><p>New Cashew Username</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User for which the ID will be associated with</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block executed when the network block completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates the Cashew Username for the specified user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/verifySubscriptionForUser:withCompletion:" title="verifySubscriptionForUser:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/verifySubscriptionForUser:withCompletion:">+&nbsp;verifySubscriptionForUser:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Verify the given Loment account represented by <a href="../Classes/CNMUser.html">CNMUser</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)verifySubscriptionForUser:(CNMUser *)<em>user</em> withCompletion:(CNMUserServicesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User account object to validate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block executed when the network block completes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Verify the given Loment account represented by <a href="../Classes/CNMUser.html">CNMUser</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMUserServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CNMMessagingServices Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Loment Messaging SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Loment</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/acceptContactRequest:withCompletion:">+ acceptContactRequest:withCompletion:</option>
+		
+		<option value="//api/name/addContact:contactName:contactEmail:contactphone:withCompletion:">+ addContact:contactName:contactEmail:contactphone:withCompletion:</option>
+		
+		<option value="//api/name/addContact:withCompletion:">+ addContact:withCompletion:</option>
+		
+		<option value="//api/name/allContactRequestsCompletion:">+ allContactRequestsCompletion:</option>
+		
+		<option value="//api/name/allContactsDeliveryController:">+ allContactsDeliveryController:</option>
+		
+		<option value="//api/name/allConversationsDeliveryController:">+ allConversationsDeliveryController:</option>
+		
+		<option value="//api/name/createNewConversationWithOtherCashewContact:withCompletion:">+ createNewConversationWithOtherCashewContact:withCompletion:</option>
+		
+		<option value="//api/name/createNewGroupConversation:withContacts:withCompletion:">+ createNewGroupConversation:withContacts:withCompletion:</option>
+		
+		<option value="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+ downloadAttachment:withAttachmentTransferProgress:withCompletion:</option>
+		
+		<option value="//api/name/getGroupConfig:">+ getGroupConfig:</option>
+		
+		<option value="//api/name/getGroupConfig:withCompletion:">+ getGroupConfig:withCompletion:</option>
+		
+		<option value="//api/name/groupConversationsDeliveryController:">+ groupConversationsDeliveryController:</option>
+		
+		<option value="//api/name/leaveConversation:withCompletion:">+ leaveConversation:withCompletion:</option>
+		
+		<option value="//api/name/markMessageAsAcknowledged:withCompletion:">+ markMessageAsAcknowledged:withCompletion:</option>
+		
+		<option value="//api/name/markMessageAsDeleted:withCompletion:">+ markMessageAsDeleted:withCompletion:</option>
+		
+		<option value="//api/name/markMessageAsRead:withCompletion:">+ markMessageAsRead:withCompletion:</option>
+		
+		<option value="//api/name/messagesDeliveryController:error:">+ messagesDeliveryController:error:</option>
+		
+		<option value="//api/name/numberOfUnreadMessagesError:">+ numberOfUnreadMessagesError:</option>
+		
+		<option value="//api/name/numberOfUnreadMessagesOnConversation:error:">+ numberOfUnreadMessagesOnConversation:error:</option>
+		
+		<option value="//api/name/registerNewListener:">+ registerNewListener:</option>
+		
+		<option value="//api/name/rejectContactRequest:withCompletion:">+ rejectContactRequest:withCompletion:</option>
+		
+		<option value="//api/name/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:">+ searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:</option>
+		
+		<option value="//api/name/sendContactRequestOnOutgoingContact:withCompletion:">+ sendContactRequestOnOutgoingContact:withCompletion:</option>
+		
+		<option value="//api/name/sendNewMessage:forConversation:withType:withCompletion:">+ sendNewMessage:forConversation:withType:withCompletion:</option>
+		
+		<option value="//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:">+ sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:</option>
+		
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:</option>
+		
+		<option value="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:">+ sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:</option>
+		
+		<option value="//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:">+ startServiceForCashewAccount:user:withCompletion:serviceInteruption:</option>
+		
+		<option value="//api/name/stopServiceWithCompletion:">+ stopServiceWithCompletion:</option>
+		
+		<option value="//api/name/unregisterListener:">+ unregisterListener:</option>
+		
+		<option value="//api/name/updateConversation:addAdmins:withCompletion:">+ updateConversation:addAdmins:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:addMembers:withCompletion:">+ updateConversation:addMembers:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:newName:withCompletion:">+ updateConversation:newName:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:newOwner:withCompletion:">+ updateConversation:newOwner:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:removeAdmins:withCompletion:">+ updateConversation:removeAdmins:withCompletion:</option>
+		
+		<option value="//api/name/updateConversation:removeMembers:withCompletion:">+ updateConversation:removeMembers:withCompletion:</option>
+		
+		<option value="//api/name/updateConversationFeaturesAdded:withCompletion:">+ updateConversationFeaturesAdded:withCompletion:</option>
+		
+		<option value="//api/name/updateConversationFeaturesRemoved:withCompletion:">+ updateConversationFeaturesRemoved:withCompletion:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CNMMessagingServices Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CNMMessagingServices.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Public interface for SDK user, allowing them to send and receive messages, create groups, create contacts, and all other things messaginging related.</p>
+
+<p>This API is only useful after you successfully authenticate with Loment server in the UserServices class and the user has selected a <a href="../Classes/CNMCashewAccount.html">CNMCashewAccount</a>
+they wish to start messaging with.</p>
+
+<p>After that has been achieved call startServiceForCashewAccount:user:withCompletion:serviceInteruption to begin all messaging services. When you are done,
+be sure to clean up by calling stop.</p>
+
+<p>See sample project for example</p>
+
+<p>Note: All other messaging API calls will fail to work until you successfully start services.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:" title="startServiceForCashewAccount:user:withCompletion:serviceInteruption:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startServiceForCashewAccount:user:withCompletion:serviceInteruption:">+&nbsp;startServiceForCashewAccount:user:withCompletion:serviceInteruption:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the messaging service so you can start sending and receiving messages</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startServiceForCashewAccount:(CNMCashewAccount *)<em>cashewAccount</em> user:(CNMUser *)<em>user</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em> serviceInteruption:(CNMMessagingServiceCompletion)<em>interuption</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cashewAccount</code></th>
+						<td><p>The cashew account to use</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The loment user associated with the cashew account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>completion handler that is called when we are finished trying to start the service</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>interuption</code></th>
+						<td><p>If service is interupted for any reason, this block is called. Recommendation is to call stop service before calling start again</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Starts the messaging service so you can start sending and receiving messages</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopServiceWithCompletion:" title="stopServiceWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopServiceWithCompletion:">+&nbsp;stopServiceWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops the messaging service so you can start sending and receiving messages. Subsequently all other calls other than start are guarenteed to fail
+until you start up services again. As a special reminder, all <a href="../Classes/CNMContentDeliveryController.html">CNMContentDeliveryController</a> will cease to provide updates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)stopServiceWithCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>completion handler that is called when we are finished stopping the service</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stops the messaging service so you can start sending and receiving messages. Subsequently all other calls other than start are guarenteed to fail
+until you start up services again. As a special reminder, all <a href="../Classes/CNMContentDeliveryController.html">CNMContentDeliveryController</a> will cease to provide updates.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerNewListener:" title="registerNewListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerNewListener:">+&nbsp;registerNewListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registers a new listener to listen for start / stop</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerNewListener:(NSObject&lt;CNMMessagingServicesListener&gt; *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The object that wants to listen</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Registers a new listener to listen for start / stop</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterListener:" title="unregisterListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterListener:">+&nbsp;unregisterListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unregisters the specified listener</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unregisterListener:(NSObject&lt;CNMMessagingServicesListener&gt; *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The object that no longer wants updates</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unregisters the specified listener</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendNewMessage:forConversation:withType:withCompletion:" title="sendNewMessage:forConversation:withType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:forConversation:withType:withCompletion:">+&nbsp;sendNewMessage:forConversation:withType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a new message from the user on the specified conversation. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:options:withExpirationDuration:forConversation:withCompletion</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> forConversation:(CNMConversation *)<em>cnmConversation</em> withType:(NSInteger)<em>msgType</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>plainText</code></th>
+						<td><p>Plain text message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends a new message from the user on the specified conversation. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:options:withExpirationDuration:forConversation:withCompletion</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:forConversation:withType:withAttachmentTransferProgress:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> forConversation:(CNMConversation *)<em>conversation</em> withType:(NSInteger)<em>msgType</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>plainText</code></th>
+						<td><p>Plain text message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentFilename</code></th>
+						<td><p>The filename of the attachment</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentData</code></th>
+						<td><p>The NSData contents of the file</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends a new message from the user on the specified conversation with an attachment. Uses settings stored in global settings. See CNMSettingsServices, defaults can be changed here.
+To send a message with one-time settings call sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withCompletion</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:" title="sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:">+&nbsp;sendNewMessage:options:withExpirationDuration:forConversation:withType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a new message from the user on the specified conversation with customized settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withType:(NSInteger)<em>msgType</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>plainText</code></th>
+						<td><p>Plain text message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Bit mask of options to set on a message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>expirationDuration</code></th>
+						<td><p>Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends a new message from the user on the specified conversation with customized settings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:" title="sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:">+&nbsp;sendNewMessage:withAttachmentFilename:withAttachmentData:options:withExpirationDuration:forConversation:withType:withAttachmentTransferProgress:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a new message from the user on the specified conversation with an attachment and customized settings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendNewMessage:(NSString *)<em>plainText</em> withAttachmentFilename:(NSString *)<em>attachmentFilename</em> withAttachmentData:(NSData *)<em>attachmentData</em> options:(CNMMessageOptions)<em>options</em> withExpirationDuration:(NSInteger)<em>expirationDuration</em> forConversation:(CNMConversation *)<em>conversation</em> withType:(NSInteger)<em>msgType</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>plainText</code></th>
+						<td><p>Plain text message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentFilename</code></th>
+						<td><p>The filename of the attachment</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentData</code></th>
+						<td><p>The NSData contents of the file</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Bit mask of options to set on a message</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>expirationDuration</code></th>
+						<td><p>Expiration in minutes. Valid values are 1-999. Passing anything else assumes no expiration.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation to post on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>Type of message (1- Normal messages, 2- Welcome message, 3- Contact, 4- Old Groups , 5- Auto Response , 6- New Groups , 7 - Screen Shot )</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is uploaded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends a new message from the user on the specified conversation with an attachment and customized settings.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markMessageAsRead:withCompletion:" title="markMessageAsRead:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markMessageAsRead:withCompletion:">+&nbsp;markMessageAsRead:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark a message as read</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)markMessageAsRead:(CNMMessage *)<em>message</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to mark</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mark a message as read</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markMessageAsAcknowledged:withCompletion:" title="markMessageAsAcknowledged:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markMessageAsAcknowledged:withCompletion:">+&nbsp;markMessageAsAcknowledged:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark a message as acknowledged when the sender requires it</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)markMessageAsAcknowledged:(CNMMessage *)<em>message</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to mark</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mark a message as acknowledged when the sender requires it</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markMessageAsDeleted:withCompletion:" title="markMessageAsDeleted:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markMessageAsDeleted:withCompletion:">+&nbsp;markMessageAsDeleted:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark a message as deleted. Once the server returns to us that it has been successfully deleted, it will be removed from the app completely.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)markMessageAsDeleted:(CNMMessage *)<em>message</em> withCompletion:(CNMMessagingServiceCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to mark</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>completion handler that is called when we are finished updating message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mark a message as deleted. Once the server returns to us that it has been successfully deleted, it will be removed from the app completely.</p>
+
+<p>Note: Please wait for completion block to return with success or failure before attempting to call this again</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:" title="downloadAttachment:withAttachmentTransferProgress:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadAttachment:withAttachmentTransferProgress:withCompletion:">+&nbsp;downloadAttachment:withAttachmentTransferProgress:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method to download data. If data is already downloaded, it will fetch from cache on disk</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadAttachment:(CNMAttachment *)<em>cnmAttachment</em> withAttachmentTransferProgress:(CNMAttachmentTransferProgress)<em>attachmentTransferProgress</em> withCompletion:(CNMAttachmentDownloadComplete)<em>downloadComplete</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cnmAttachment</code></th>
+						<td><p>The attachment to download data on</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attachmentTransferProgress</code></th>
+						<td><p>Periodic called block during the time the attachment is downloaded</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadComplete</code></th>
+						<td><p>Completion block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method to download data. If data is already downloaded, it will fetch from cache on disk</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addContact:withCompletion:" title="addContact:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addContact:withCompletion:">+&nbsp;addContact:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addContact:(NSString *)<em>cashewUsername</em> withCompletion:(CNMMessagingContactCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cashewUsername</code></th>
+						<td><p>The cashew username to look up</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMContact.html">CNMContact</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addContact:contactName:contactEmail:contactphone:withCompletion:" title="addContact:contactName:contactEmail:contactphone:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addContact:contactName:contactEmail:contactphone:withCompletion:">+&nbsp;addContact:contactName:contactEmail:contactphone:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back
+*</li>
+<li>@param cashewUsername The cashew username to look up</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addContact:(NSString *)<em>cashewUsername</em> contactName:(NSString *)<em>contactString</em> contactEmail:(NSString *)<em>contactEmail</em> contactphone:(NSString *)<em>ContactPhone</em> withCompletion:(CNMMessagingContactCompletion)<em>completion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Add a contact to list of known contacts. If contact does not exist in Loment system, you will get an error back
+*</li>
+<li><p>@param cashewUsername The cashew username to look up</p></li>
+<li><p>@param completion     Completion block that returns <a href="../Classes/CNMContact.html">CNMContact</a> or an error if something went wrong</p></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createNewConversationWithOtherCashewContact:withCompletion:" title="createNewConversationWithOtherCashewContact:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewConversationWithOtherCashewContact:withCompletion:">+&nbsp;createNewConversationWithOtherCashewContact:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new 1-to-1 <a href="../Classes/CNMConversation.html">CNMConversation</a> and saves it to the database.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createNewConversationWithOtherCashewContact:(CNMContact *)<em>otherCashewContact</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otherCashewContact</code></th>
+						<td><p>Cashew contact representing the other person</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new 1-to-1 <a href="../Classes/CNMConversation.html">CNMConversation</a> and saves it to the database.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createNewGroupConversation:withContacts:withCompletion:" title="createNewGroupConversation:withContacts:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNewGroupConversation:withContacts:withCompletion:">+&nbsp;createNewGroupConversation:withContacts:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createNewGroupConversation:(NSString *)<em>groupName</em> withContacts:(NSArray *)<em>otherContacts</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>The name of the group (This param is required)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otherContacts</code></th>
+						<td><p>Array of valid CNMContacts. If you instantiate your <a href="../Classes/CNMContact.html">CNMContact</a>, unexpected results may happen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new group conversation with the given name using the array of CNMContacts. Caller is the admin / owner of the newly created group.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:addMembers:withCompletion:" title="updateConversation:addMembers:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:addMembers:withCompletion:">+&nbsp;updateConversation:addMembers:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by adding contacts to group</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> addMembers:(NSArray *)<em>addMembers</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>addMembers</code></th>
+						<td><p>Array of valid CNMContacts. If you instantiate your <a href="../Classes/CNMContact.html">CNMContact</a>, unexpected results may happen.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by adding contacts to group</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:removeMembers:withCompletion:" title="updateConversation:removeMembers:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:removeMembers:withCompletion:">+&nbsp;updateConversation:removeMembers:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by removing contacts from group</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> removeMembers:(NSArray *)<em>removeMembers</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>removeMembers</code></th>
+						<td><p>Array of valid CNMContacts</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by removing contacts from group</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:newName:withCompletion:" title="updateConversation:newName:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:newName:withCompletion:">+&nbsp;updateConversation:newName:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group name</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> newName:(NSString *)<em>newGroupName</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newGroupName</code></th>
+						<td><p>New name of the group</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group name</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversationFeaturesAdded:withCompletion:" title="updateConversationFeaturesAdded:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversationFeaturesAdded:withCompletion:">+&nbsp;updateConversationFeaturesAdded:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the Features status to all members belonging to the group can add members.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversationFeaturesAdded:(CNMConversation *)<em>cnmConversationParam</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the Features status to all members belonging to the group can add members.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversationFeaturesRemoved:withCompletion:" title="updateConversationFeaturesRemoved:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversationFeaturesRemoved:withCompletion:">+&nbsp;updateConversationFeaturesRemoved:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversationFeaturesRemoved:(CNMConversation *)<em>cnmConversationParam</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the Feature Status to only Main Admin and Admin can add members to group</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:newOwner:withCompletion:" title="updateConversation:newOwner:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:newOwner:withCompletion:">+&nbsp;updateConversation:newOwner:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group Mainadmin</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>conversation</em> newOwner:(CNMContact *)<em>newOwner</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newOwner</code></th>
+						<td><p>The new owner</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group Mainadmin</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leaveConversation:withCompletion:" title="leaveConversation:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leaveConversation:withCompletion:">+&nbsp;leaveConversation:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For participants of groups that are not the admin but wish to leave a group conversation. Call this method to remove yourself.
+NOTE: Historical data is kept, you will simply not receive new information on said conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)leaveConversation:(CNMConversation *)<em>conversation</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation you wish to leave</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For participants of groups that are not the admin but wish to leave a group conversation. Call this method to remove yourself.
+NOTE: Historical data is kept, you will simply not receive new information on said conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:addAdmins:withCompletion:" title="updateConversation:addAdmins:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:addAdmins:withCompletion:">+&nbsp;updateConversation:addAdmins:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group Member to Admin&rsquo;s</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>cnmConversationParam</em> addAdmins:(NSArray *)<em>adminsToAdd</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>addAdmins</code></th>
+						<td><p>Array of valid CNMContacts</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group Member to Admin&rsquo;s</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConversation:removeAdmins:withCompletion:" title="updateConversation:removeAdmins:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConversation:removeAdmins:withCompletion:">+&nbsp;updateConversation:removeAdmins:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the conversation by changing the group Admin&rsquo;s to Members</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateConversation:(CNMConversation *)<em>cnmConversationParam</em> removeAdmins:(NSArray *)<em>removeAdmins</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>removeAdmins</code></th>
+						<td><p>Array of valid CNMContacts</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that returns <a href="../Classes/CNMConversation.html">CNMConversation</a> or an error if something went wrong</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The group conversation you wish to update</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the conversation by changing the group Admin&rsquo;s to Members</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGroupConfig:" title="getGroupConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGroupConfig:">+&nbsp;getGroupConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)getGroupConfig:(CNMConversation *)<em>cnmConversationParam</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getGroupConfig:withCompletion:" title="getGroupConfig:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getGroupConfig:withCompletion:">+&nbsp;getGroupConfig:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (void)getGroupConfig:(NSString *)<em>groupId</em> withCompletion:(CNMMessagingConversationCompletion)<em>completion</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfUnreadMessagesOnConversation:error:" title="numberOfUnreadMessagesOnConversation:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfUnreadMessagesOnConversation:error:">+&nbsp;numberOfUnreadMessagesOnConversation:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the number of unread messages on any given conversation</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSUInteger)numberOfUnreadMessagesOnConversation:(CNMConversation *)<em>conversation</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation in question</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error referece</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The undread count or NSUIntegerMax if error</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Retrieves the number of unread messages on any given conversation</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfUnreadMessagesError:" title="numberOfUnreadMessagesError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfUnreadMessagesError:">+&nbsp;numberOfUnreadMessagesError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Total number of unread messages</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSUInteger)numberOfUnreadMessagesError:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error referece</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Total number of unread messsages or NSUIntegerMax if error</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Total number of unread messages</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messagesDeliveryController:error:" title="messagesDeliveryController:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messagesDeliveryController:error:">+&nbsp;messagesDeliveryController:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides access to all messages in a conversation in an FRC-like fashion. Be sure to set delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (CNMContentDeliveryController *)messagesDeliveryController:(CNMConversation *)<em>conversation</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>Conversation we wish to track</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error referece</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Newly allocated delivery controller</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Provides access to all messages in a conversation in an FRC-like fashion. Be sure to set delegate</p>
+
+<p>Important! Only call this on main thread. Reminder! If stopServiceWithCompletion is called, updates will stop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allConversationsDeliveryController:" title="allConversationsDeliveryController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allConversationsDeliveryController:">+&nbsp;allConversationsDeliveryController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides access to all conversations in a FRC-like fashion. Be sure to set delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (CNMContentDeliveryController *)allConversationsDeliveryController:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error reference</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Newly allocated delivery controller</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Provides access to all conversations in a FRC-like fashion. Be sure to set delegate</p>
+
+<p>Important! Only call this on main thread. Reminder! If stopServiceWithCompletion is called, updates will stop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupConversationsDeliveryController:" title="groupConversationsDeliveryController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupConversationsDeliveryController:">+&nbsp;groupConversationsDeliveryController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides access to group conversations in a FRC-like fashion. Be sure to set delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (CNMContentDeliveryController *)groupConversationsDeliveryController:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error reference</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Newly allocated delivery controller</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Provides access to group conversations in a FRC-like fashion. Be sure to set delegate</p>
+
+<p>Important! Only call this on main thread. Reminder! If stopServiceWithCompletion is called, updates will stop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allContactsDeliveryController:" title="allContactsDeliveryController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allContactsDeliveryController:">+&nbsp;allContactsDeliveryController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Provides access to contacts in a FRC-like fashion. Be sure to set delegate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (CNMContentDeliveryController *)allContactsDeliveryController:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error reference</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Newly allocated delivery controller</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Provides access to contacts in a FRC-like fashion. Be sure to set delegate</p>
+
+<p>Important! Only call this on main thread. Reminder! If stopServiceWithCompletion is called, updates will stop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:" title="searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:">+&nbsp;searchForContactsWithEmailAddresses:andPhoneNumbers:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Searches for suggested contacts based on provided email addresses and phone numbers</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)searchForContactsWithEmailAddresses:(NSArray *)<em>emailAddresses</em> andPhoneNumbers:(NSArray *)<em>phoneNumbers</em> withCompletion:(CNMMessagingContactSearchCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailAddresses</code></th>
+						<td><p>An array of email addresses with which to search</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phoneNumbers</code></th>
+						<td><p>An array of phone numbers with which to search</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion handler that is called when we are finished sending</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Searches for suggested contacts based on provided email addresses and phone numbers</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allContactRequestsCompletion:" title="allContactRequestsCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allContactRequestsCompletion:">+&nbsp;allContactRequestsCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously fetches all your CNMIncomingContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
+individual requests</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)allContactRequestsCompletion:(CNMMessagingContactRequestCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block called when data is retrieved</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Asynchronously fetches all your CNMIncomingContacts a.k.a. &ldquo;Incoming Friend Requests&rdquo;  Note: Includes those you&rsquo;ve accepted / declined. Please check status of
+individual requests</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendContactRequestOnOutgoingContact:withCompletion:" title="sendContactRequestOnOutgoingContact:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendContactRequestOnOutgoingContact:withCompletion:">+&nbsp;sendContactRequestOnOutgoingContact:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initiates a new friend request for the given suggested contact.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendContactRequestOnOutgoingContact:(CNMOutgoingContact *)<em>outgoingContact</em> withCompletion:(CNMMessagingSendContactRequestCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outgoingContact</code></th>
+						<td><p>The outgoing contact we wish to be-friend as a contact</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block called when request is sent to server</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initiates a new friend request for the given suggested contact.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acceptContactRequest:withCompletion:" title="acceptContactRequest:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acceptContactRequest:withCompletion:">+&nbsp;acceptContactRequest:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Accept a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)acceptContactRequest:(CNMIncomingContact *)<em>incomingContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>incomingContact</code></th>
+						<td><p>The <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a> to accept</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block called once the contact request has been accepted.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Accept a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rejectContactRequest:withCompletion:" title="rejectContactRequest:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rejectContactRequest:withCompletion:">+&nbsp;rejectContactRequest:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Decline a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)rejectContactRequest:(CNMIncomingContact *)<em>incomingContact</em> withCompletion:(CNMMessagingContactRequestResponseCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>incomingContact</code></th>
+						<td><p>The <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a> to decline</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block called once the contact request has been declined.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Decline a contact request from a <a href="../Classes/CNMIncomingContact.html">CNMIncomingContact</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CNMMessagingServices.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

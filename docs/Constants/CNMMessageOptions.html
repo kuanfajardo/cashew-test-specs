@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CNMMessageOptions Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Loment Messaging SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Loment</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CNMMessageOptions Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>CNMMessageEnums.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">CNMMessageOptions</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Bit-mask for setting various options on new messages. When you have a <a href="../Classes/CNMMessage.html">CNMMessage</a>, the values will be explicit properties</p>
+
+<p>Note: You should should not pass in 0, if you don&rsquo;t know what you want, choose CNMMessageOptionsDefault. If you put in 0,
+we will assume no options and message priority will be Low</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_OPTIONS(NSUInteger, CNMMessageOptions ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsPriorityHigest</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsPriorityHigh</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsPriorityMedium</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsPriorityLow</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsPriorityMask</a> = CNMMessageOptionsPriorityLow,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsForwardRestricted</a> = 1 &lt; &lt; 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsReadReceipt</a> = 1 &lt; &lt; 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CNMMessageOptionsDefault</a> = CNMMessageOptionsPriorityLow,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="CNMMessageOptionsPriorityHigest"></a><code>CNMMessageOptionsPriorityHigest</code></dt>
+<dd>
+
+
+<p>Most important priority</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsPriorityHigh"></a><code>CNMMessageOptionsPriorityHigh</code></dt>
+<dd>
+
+
+<p>High priority</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsPriorityMedium"></a><code>CNMMessageOptionsPriorityMedium</code></dt>
+<dd>
+
+
+<p>Medium / normal priority</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsPriorityLow"></a><code>CNMMessageOptionsPriorityLow</code></dt>
+<dd>
+
+
+<p>Lowest priority message</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsPriorityMask"></a><code>CNMMessageOptionsPriorityMask</code></dt>
+<dd>
+
+
+<p>The first 2 bits are priorty bits.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsForwardRestricted"></a><code>CNMMessageOptionsForwardRestricted</code></dt>
+<dd>
+
+
+<p>Setting this option indicates that a message should not be forwarded</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsReadReceipt"></a><code>CNMMessageOptionsReadReceipt</code></dt>
+<dd>
+
+
+<p>Setting this option indicates that a message requires a read receipt.
+Messages with this setting will not provide plain text until message is marked
+as recieved / read. See markMessageAsAcknowledged for details</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CNMMessageOptionsDefault"></a><code>CNMMessageOptionsDefault</code></dt>
+<dd>
+
+
+<p>Default</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMMessageEnums.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">CNMMessageEnums.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

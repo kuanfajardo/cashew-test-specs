@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SDKNetworkError Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Loment Messaging SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Loment</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SDKNetworkError Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>CNMErrorCodes.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">SDKNetworkError</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Error codes specific to networking layer</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSUInteger, SDKNetworkError ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorCheckNSFoundation</a> = -1000,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUnkown</a> = -1001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGenericFailure</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUserAccountNotFound</a> = 10002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUserAccountInactive</a> = 10003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDeviceNotFound</a> = 20002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDeviceInactive</a> = 20003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountNotFound</a> = 30002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountInactive</a> = 30003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorClientApplicationMustBeUpgraded</a> = 99999,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDuplicateUsername</a> = 10102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDuplicateMobileNumber</a> = 10103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidData</a> = 10104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorOtherAccountUsingMobileNumber</a> = 10105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidUsername</a> = 10202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidPassword</a> = 10203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUserAuthAccountInactive</a> = 10204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUpdateProfileInvalidData</a> = 10304,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDuplicateDeviceId</a> = 20102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDuplicateDeviceName</a> = 20103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAddDeviceTypeNotKnown</a> = 20105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorDeviceIdNotValid</a> = 20205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUpdateDeviceDuplicateDeviceId</a> = 20202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUpdateDeviceDuplicateDeviceName</a> = 20203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUpdateDeviceTypeNotKnown</a> = 20204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUpdateDeviceDeviceIdInvalid</a> = 20205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidDeviceStatus</a> = 20206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountNameDuplicate</a> = 30202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountProviderNotKown</a> = 30203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountServerProtocolNotKnown</a> = 30204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountServerSSLEnabledDisabledSettingInvalid</a> = 30205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountServerPortSettingInvalid</a> = 30206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAccountStatusInvalid</a> = 30207,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorUserAccountNameDuplicate</a> = 30102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorAddUserAccountNameDuplicate</a> = 30103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidKey</a> = 10402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorExpiredKey</a> = 10403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPaymentGatewayIdIsNotAvailable</a> = 40102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPaymentGatewayIsNotActive</a> = 40103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidSubscriptionStartDate</a> = 40104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidSubscriptionEndDate</a> = 40105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidAmount</a> = 40106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorInvalidSubscripedFeatures</a> = 40107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPaymentIdNotFound</a> = 40111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPaymentStatusIsInvalid</a> = 40109,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenLogDirectionIsInvalid</a> = 40110,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenBillIdNotFound</a> = 40111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenRenewalBillIdNotFound</a> = 40112,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenBillStatusIsInvalid</a> = 40113,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenSubscriptionEndDateForBillIsInvalid</a> = 40114,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPaymentIdAlreadyHasABillAttachedToIt</a> = 40115,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenBillKeyIsInvalid</a> = 40116,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorPaymentFailedAtPaymentGateway</a> = 40117,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupNotExist</a> = 40101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupInvalidParameter</a> = 40201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupAddMemberInvalidParameter</a> = 40301,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupAddMemberInvalidGroupType</a> = 40302,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupAddMemberInvalidOwner</a> = 40303,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupRemoveMemberInvalidParameter</a> = 40401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupRemoveMemberInvalidGroupType</a> = 40402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupRemoveMemberInvalidOwner</a> = 40403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner</a> = 40404,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupOwnerTransferInvalid</a> = 40501,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupOwnerNotMemberOfGroup</a> = 40502,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupInvalidHeaderData</a> = 40601,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupInvalidBodyData</a> = 40602,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupInvalidMemberPermission</a> = 40603,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorForGroupOperations</a> = 40604,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenSubscriptionIdNotFound</a> = 50202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenProductFeatureIdIsInvalid</a> = 50203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenDeviceCountInvalid</a> = 50205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorStatusIsInvalid</a> = 50205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenDeviceStatusIsInvalid</a> = 50206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenQuotaExceededForGivenBillOrSubscription</a> = 50207,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenDeviceAlreadyHasAnActiveSubscription</a> = 50208,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorNoSubscriptionOrActiveSubscriptionFound</a> = 50210,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SDKNetworkErrorGivenPrimaryUsernameNotFoundOrInactive</a> = 50211,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="SDKNetworkErrorCheckNSFoundation"></a><code>SDKNetworkErrorCheckNSFoundation</code></dt>
+<dd>
+
+
+<p>During an SDK network call, we encountered an error. If you receive an error with this code, check the underlying error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUnkown"></a><code>SDKNetworkErrorUnkown</code></dt>
+<dd>
+
+
+<p>Unknown / unhandled exception. We will attempt to gain as much information as we can and put it in the userinfo</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGenericFailure"></a><code>SDKNetworkErrorGenericFailure</code></dt>
+<dd>
+
+
+<p>Server returned Generic Failure</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUserAccountNotFound"></a><code>SDKNetworkErrorUserAccountNotFound</code></dt>
+<dd>
+
+
+<p>No user account was found on server</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUserAccountInactive"></a><code>SDKNetworkErrorUserAccountInactive</code></dt>
+<dd>
+
+
+<p>The user account is inactive</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDeviceNotFound"></a><code>SDKNetworkErrorDeviceNotFound</code></dt>
+<dd>
+
+
+<p>The device specified is not found</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDeviceInactive"></a><code>SDKNetworkErrorDeviceInactive</code></dt>
+<dd>
+
+
+<p>The device specified is inactive</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountNotFound"></a><code>SDKNetworkErrorAccountNotFound</code></dt>
+<dd>
+
+
+<p>The account is not found</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountInactive"></a><code>SDKNetworkErrorAccountInactive</code></dt>
+<dd>
+
+
+<p>The account is inactive</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorClientApplicationMustBeUpgraded"></a><code>SDKNetworkErrorClientApplicationMustBeUpgraded</code></dt>
+<dd>
+
+
+<p>The client application is out of date and must be upgraded</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDuplicateUsername"></a><code>SDKNetworkErrorDuplicateUsername</code></dt>
+<dd>
+
+
+<p>Duplicate username encountered during signup</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDuplicateMobileNumber"></a><code>SDKNetworkErrorDuplicateMobileNumber</code></dt>
+<dd>
+
+
+<p>Duplicate mobile number encountered during signup</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidData"></a><code>SDKNetworkErrorInvalidData</code></dt>
+<dd>
+
+
+<p>Invalid data when attempting to sign up</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorOtherAccountUsingMobileNumber"></a><code>SDKNetworkErrorOtherAccountUsingMobileNumber</code></dt>
+<dd>
+
+
+<p>Another account is using provided mobile number</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidUsername"></a><code>SDKNetworkErrorInvalidUsername</code></dt>
+<dd>
+
+
+<p>Invalid username when authenticating</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidPassword"></a><code>SDKNetworkErrorInvalidPassword</code></dt>
+<dd>
+
+
+<p>Invalid password when authenticating</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUserAuthAccountInactive"></a><code>SDKNetworkErrorUserAuthAccountInactive</code></dt>
+<dd>
+
+
+<p>Account is inactive</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUpdateProfileInvalidData"></a><code>SDKNetworkErrorUpdateProfileInvalidData</code></dt>
+<dd>
+
+
+<p>Invalid data when attempting to update profile</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDuplicateDeviceId"></a><code>SDKNetworkErrorDuplicateDeviceId</code></dt>
+<dd>
+
+
+<p>Duplicate device id encountered when adding device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDuplicateDeviceName"></a><code>SDKNetworkErrorDuplicateDeviceName</code></dt>
+<dd>
+
+
+<p>Duplicate device name encountered when adding device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAddDeviceTypeNotKnown"></a><code>SDKNetworkErrorAddDeviceTypeNotKnown</code></dt>
+<dd>
+
+
+<p>Unknown server error when trying to add device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorDeviceIdNotValid"></a><code>SDKNetworkErrorDeviceIdNotValid</code></dt>
+<dd>
+
+
+<p>Device id is not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUpdateDeviceDuplicateDeviceId"></a><code>SDKNetworkErrorUpdateDeviceDuplicateDeviceId</code></dt>
+<dd>
+
+
+<p>Duplicate device id encountered when updating device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUpdateDeviceDuplicateDeviceName"></a><code>SDKNetworkErrorUpdateDeviceDuplicateDeviceName</code></dt>
+<dd>
+
+
+<p>Duplicate device name encountered when updating device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUpdateDeviceTypeNotKnown"></a><code>SDKNetworkErrorUpdateDeviceTypeNotKnown</code></dt>
+<dd>
+
+
+<p>Unknown server error when trying to update device</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUpdateDeviceDeviceIdInvalid"></a><code>SDKNetworkErrorUpdateDeviceDeviceIdInvalid</code></dt>
+<dd>
+
+
+<p>Device id is not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidDeviceStatus"></a><code>SDKNetworkErrorInvalidDeviceStatus</code></dt>
+<dd>
+
+
+<p>Device does not have a valid status</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountNameDuplicate"></a><code>SDKNetworkErrorAccountNameDuplicate</code></dt>
+<dd>
+
+
+<p>Duplicate account name when performing operations</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountProviderNotKown"></a><code>SDKNetworkErrorAccountProviderNotKown</code></dt>
+<dd>
+
+
+<p>Account provider is not known</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountServerProtocolNotKnown"></a><code>SDKNetworkErrorAccountServerProtocolNotKnown</code></dt>
+<dd>
+
+
+<p>Server protocol is not known</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountServerSSLEnabledDisabledSettingInvalid"></a><code>SDKNetworkErrorAccountServerSSLEnabledDisabledSettingInvalid</code></dt>
+<dd>
+
+
+<p>Server SSL settings not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountServerPortSettingInvalid"></a><code>SDKNetworkErrorAccountServerPortSettingInvalid</code></dt>
+<dd>
+
+
+<p>Server port setting is incorrect</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAccountStatusInvalid"></a><code>SDKNetworkErrorAccountStatusInvalid</code></dt>
+<dd>
+
+
+<p>Account status is not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorUserAccountNameDuplicate"></a><code>SDKNetworkErrorUserAccountNameDuplicate</code></dt>
+<dd>
+
+
+<p>Duplicate account name when performing operations</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorAddUserAccountNameDuplicate"></a><code>SDKNetworkErrorAddUserAccountNameDuplicate</code></dt>
+<dd>
+
+
+<p>Duplicate account name when performing operations</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidKey"></a><code>SDKNetworkErrorInvalidKey</code></dt>
+<dd>
+
+
+<p>Invalid key</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorExpiredKey"></a><code>SDKNetworkErrorExpiredKey</code></dt>
+<dd>
+
+
+<p>Expired key</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPaymentGatewayIdIsNotAvailable"></a><code>SDKNetworkErrorGivenPaymentGatewayIdIsNotAvailable</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPaymentGatewayIsNotActive"></a><code>SDKNetworkErrorGivenPaymentGatewayIsNotActive</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidSubscriptionStartDate"></a><code>SDKNetworkErrorInvalidSubscriptionStartDate</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidSubscriptionEndDate"></a><code>SDKNetworkErrorInvalidSubscriptionEndDate</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidAmount"></a><code>SDKNetworkErrorInvalidAmount</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorInvalidSubscripedFeatures"></a><code>SDKNetworkErrorInvalidSubscripedFeatures</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPaymentIdNotFound"></a><code>SDKNetworkErrorGivenPaymentIdNotFound</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPaymentStatusIsInvalid"></a><code>SDKNetworkErrorGivenPaymentStatusIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenLogDirectionIsInvalid"></a><code>SDKNetworkErrorGivenLogDirectionIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenBillIdNotFound"></a><code>SDKNetworkErrorGivenBillIdNotFound</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenRenewalBillIdNotFound"></a><code>SDKNetworkErrorGivenRenewalBillIdNotFound</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenBillStatusIsInvalid"></a><code>SDKNetworkErrorGivenBillStatusIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenSubscriptionEndDateForBillIsInvalid"></a><code>SDKNetworkErrorGivenSubscriptionEndDateForBillIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPaymentIdAlreadyHasABillAttachedToIt"></a><code>SDKNetworkErrorGivenPaymentIdAlreadyHasABillAttachedToIt</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenBillKeyIsInvalid"></a><code>SDKNetworkErrorGivenBillKeyIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorPaymentFailedAtPaymentGateway"></a><code>SDKNetworkErrorPaymentFailedAtPaymentGateway</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupNotExist"></a><code>SDKNetworkErrorForGroupNotExist</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupInvalidParameter"></a><code>SDKNetworkErrorForGroupInvalidParameter</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupAddMemberInvalidParameter"></a><code>SDKNetworkErrorForGroupAddMemberInvalidParameter</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupAddMemberInvalidGroupType"></a><code>SDKNetworkErrorForGroupAddMemberInvalidGroupType</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupAddMemberInvalidOwner"></a><code>SDKNetworkErrorForGroupAddMemberInvalidOwner</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupRemoveMemberInvalidParameter"></a><code>SDKNetworkErrorForGroupRemoveMemberInvalidParameter</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupRemoveMemberInvalidGroupType"></a><code>SDKNetworkErrorForGroupRemoveMemberInvalidGroupType</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupRemoveMemberInvalidOwner"></a><code>SDKNetworkErrorForGroupRemoveMemberInvalidOwner</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner"></a><code>SDKNetworkErrorForGroupRemoveMemberCannotRemoveOwner</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupOwnerTransferInvalid"></a><code>SDKNetworkErrorForGroupOwnerTransferInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupOwnerNotMemberOfGroup"></a><code>SDKNetworkErrorForGroupOwnerNotMemberOfGroup</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupInvalidHeaderData"></a><code>SDKNetworkErrorForGroupInvalidHeaderData</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupInvalidBodyData"></a><code>SDKNetworkErrorForGroupInvalidBodyData</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupInvalidMemberPermission"></a><code>SDKNetworkErrorForGroupInvalidMemberPermission</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorForGroupOperations"></a><code>SDKNetworkErrorForGroupOperations</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenSubscriptionIdNotFound"></a><code>SDKNetworkErrorGivenSubscriptionIdNotFound</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenProductFeatureIdIsInvalid"></a><code>SDKNetworkErrorGivenProductFeatureIdIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenDeviceCountInvalid"></a><code>SDKNetworkErrorGivenDeviceCountInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorStatusIsInvalid"></a><code>SDKNetworkErrorStatusIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenDeviceStatusIsInvalid"></a><code>SDKNetworkErrorGivenDeviceStatusIsInvalid</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenQuotaExceededForGivenBillOrSubscription"></a><code>SDKNetworkErrorGivenQuotaExceededForGivenBillOrSubscription</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenDeviceAlreadyHasAnActiveSubscription"></a><code>SDKNetworkErrorGivenDeviceAlreadyHasAnActiveSubscription</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorNoSubscriptionOrActiveSubscriptionFound"></a><code>SDKNetworkErrorNoSubscriptionOrActiveSubscriptionFound</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SDKNetworkErrorGivenPrimaryUsernameNotFoundOrInactive"></a><code>SDKNetworkErrorGivenPrimaryUsernameNotFoundOrInactive</code></dt>
+<dd>
+
+
+<p>Needs documentation</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">CNMErrorCodes.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">CNMErrorCodes.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Loment. All rights reserved. Updated: 2017-04-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
