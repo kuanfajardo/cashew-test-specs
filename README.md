@@ -102,7 +102,31 @@ You can find the full documentation of Cashew [here](https://kuanfajardo.github.
 
 #### Registration
 
+The first step to using the Cashew SDK is to register a new user. This is accomplished by calling ```registerUserWithName:``` and passing in valid name, password, email, phone number and country code:
+
+```objc
+[CNMUserServices 
+	registerUserWithName: self.nameTextField.text 	
+        withPassword:self.passwordTextField.text
+	withEmail:self.emailTextField.text 		
+        withPhone:self.phoneNumberTextField.text 	
+        withIsoCode:self.countryCodeTextField.text 	
+        withCompletion:^(CNMUser*user,NSError*error)
+        {
+	   dispatch_async(dispatch_get_main_queue(),^{ 
+		if(!error){
+			//Handle success
+		} else {
+			//Handle failure
+		}
+
+		[self dismiss]; 
+	   });
+        }];
+```
+
 #### Login and Account Creation
+
 
 #### Messaging
 
