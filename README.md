@@ -14,6 +14,7 @@ Cashew makes it easy to implement secure messaging into your app.
    - [Login and Account Creation](#login-and-account-creation)
    - [Messaging](#messaging)
    - [Groups](#groups)
+5. [License](#license)
 
 ## Requirements
 
@@ -603,4 +604,5 @@ You can leave Group using using below call. This is valid operation if the you a
 
 ```
 
-
+## License
+Copyright 2017 Loment, Inc. All rights reserved.
