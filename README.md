@@ -8,20 +8,12 @@ Carthage makes it easy to implement secure messaging into your app.
 2. [Integration](#integration)
    - [Installation](#installation)
    - [Setting up Xcode](#setting-up-xcode)
-3. [Usage](#usage)
-   - [Initialization](#initialization)
-   - [Subscript](#subscript)
-   - [Loop](#loop)
-   - [Error](#error)
-   - [Optional getter](#optional-getter)
-   - [Non-optional getter](#non-optional-getter)
-   - [Setter](#setter)
-   - [Raw object](#raw-object)
-   - [Literal convertibles](#literal-convertibles)
-   - [Merging](#merging)
-4. [Work with Alamofire](#work-with-alamofire)
-5. [Work with Moya](#work-with-moya)
-
+3. [Documentation](#documentation)
+4. [Usage](#usage)
+   - [Registration](#registration)
+   - [Login and Account Creation](#login-and-account-creation)
+   - [Messaging](#messaging)
+   - [Groups](#groups)
 
 ## Requirements
 
@@ -102,5 +94,18 @@ HTTP_DIGEST_REALM
 
 Once the above steps are done then you are authorized to use the Cashew SDK and its related functionality. For questions or support please contact the Loment team at support@loment.net.
 
+## Documentation
+
+You can find the full documentation of Cashew [here](https://kuanfajardo.github.io/cashew-test-specs/).
+
 ## Usage
+
+#### Registration
+
+#### Login and Account Creation
+
+#### Messaging
+
+#### Groups
+
 
