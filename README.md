@@ -168,6 +168,252 @@ At this point we need to understand a tiny bit about the Loment Cashew architect
 
 #### Messaging
 
+Now that we have our user created and logged in and the user has at least one cashew account associated with it, the next step is to start the message services. All Cashew messages are delivered via AMQP message queues, messages cannot be sent or received until the message queues are started. To start the message services, call ```startServiceForCashewAccount:```
+
+
+```objc
+//Start messaging service
+[CNMMessagingServices
+	startServiceForCashewAccount:self.selectedCashewAccount	
+        user:self.user 
+        withCompletion:^(NSError*error)
+        {
+	   if(error)
+	   { 
+		//Handle message service failed to start 
+	   }
+        }
+	serviceInteruption:^(NSError*error) 
+        {
+	    //Handle message queue failure
+        }];
+```
+
+Now that the message services are started, the next step is to create a contact to have a conversation with.
+
+```objc
+[CNMMessagingServices
+	addContact:textField.text
+        withCompletion:^(CNMContact *contact,NSError*error)
+        {
+	   if(!error)
+	   { 
+		// Handle success 
+	   }
+	   else
+	   {
+		// Handle failure
+	   }
+         }
+```
+
+All cashew messages occur in the context of a conversation. The conversation happens with a specific recipient, so we pass in a contact object to the ```createNewConversationWithOtherCashewContactcall:```
+
+```objc
+
+[CNMMessagingServices
+	createNewConversationWithOtherCashewContact:contact
+		withCompletion:^(CNMConversation*convo,NSError*error)
+        {
+	   if(!error)
+	   { 
+		// Handle success 
+	   }
+	   else
+	   {
+		// Handle failure
+	   } 
+        }];
+
+```
+
+Now that the conversation has been established, we can send messages to the contact:
+
+```objc
+
+[CNMMessagingServices
+	sendNewMessage:messageToSend
+	withAttachmentFilename:attachmentFileName
+	withAttachmentData:UIImagePNGRepresentation(self.attachmentImageView.image) 	
+        forConversation:self.conversation
+        withType:msgType
+	withCompletion:^(NSError*error)
+        {
+	   if(!error)
+	   { 
+		// Handle success 
+	   }
+	   else
+	   {
+		// Handle failure
+	   }
+        }];
+
+```
+
+Below call will provide the unread count for each conversation
+
+```objc
+[CNMMessagingServices numberOfUnreadMessagesOnConversation:convo 
+                      error:&error];
+```
+
+
+To get the list of conversations we need to do below steps
+
+Steps: 
+1. Take a view controller class which should import messaging SDK.
+
+2. Class should inherit ```CNMContentDeliveryControllerDelegate```, ```CNMMessagingServicesListener```.
+
+3. Declare a property to handle the content and to show it in table view
+
+```objc
+@property (nonatomic, strong) CNMContentDeliveryController * conversationDelivery;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+```
+
+4. Implement below function to get the list of conversations
+
+```objc
+- (void)getAllConversations
+{
+    NSError * e;
+    CNMContentDeliveryController * delivery = [CNMMessagingServices allConversationsDeliveryController:&e];
+
+    if (!e) {
+        self.conversationDelivery = delivery;
+        self.conversationDelivery.delegate = self;
+        [self.conversationDelivery fetchData:&e];
+        [self.tableView reloadData];
+    }
+
+    else {
+        [[[UIAlertView alloc] initWithTitle:@"Warning" message:@"Failed to fetch conversations. You may not be actively connected to server for various reasons. Ensure you have an active internet conntection, and your credentials are correct" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
+    }
+}
+```
+
+5. Call the above method in ```viewWillAppear```.
+
+```objc
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [self didStartServices];//Listeners for CNMMessagingServicesListener
+}
+
+- (void)didStartServices
+{
+    [self getAllConversations];
+}
+```
+
+6. Make sure to set conversationDelivery to nill on ```viewDidDisappear```.
+
+```objc
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+
+    [self didStopServices]; // Listeners forCNMMessagingServicesListener
+}
+
+- (void)didStopServices
+{
+    self.conversationDelivery = nil;
+}
+
+```
+
+7. Delegate methods for ```CNMContentDeliveryControllerDelegate``` should be implemented.
+
+```objc
+- (void)controllerWillChangeContent:(CNMContentDeliveryController *)controller
+{
+    [self.tableView beginUpdates];
+}
+
+- (void)controller:(CNMContentDeliveryController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(CNMFetchResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
+{
+    UITableView * tableView = self.tableView;
+
+    switch(type) {
+        case CNMFetchResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+
+        case CNMFetchResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+
+        case CNMFetchResultsChangeUpdate:
+            [self configureCell:(ConversationTableViewCell *)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+
+        case CNMFetchResultsChangeMove:
+            [self configureCell:(ConversationTableViewCell *)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:newIndexPath];
+            [tableView moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+            break;
+    }
+}
+
+- (void)controllerDidChangeContent:(CNMContentDeliveryController *)controller
+{
+    [self.tableView endUpdates];
+}
+
+- (void)configureCell:(ConversationTableViewCell *)cell atIndexPath:(NSIndexPath *)path
+{
+    // getting each conversation object
+    CNMConversation *convo = [self.conversationDelivery objectAtIndexPath:path];
+
+    // Set Participant name
+    cell.participantsLabel.text = convo.conversationName;
+
+    // Setting Last message Preview Label
+    NSString * messagePlainText = convo.latestMessage.content;
+    cell.lastMessagePreviewLabel.text = [messagePlainText substringToIndex:MIN(100, messagePlainText.length)];
+
+    // Get the unread count.
+
+    NSError * error;
+    NSUInteger count = [CNMMessagingServices numberOfUnreadMessagesOnConversation:convo error:&error];
+    NSAssert(!error, @"wat");
+
+    // set it on the cell.
+}
+```
+
+
+8. Implement ```UITableViewDataSource``` methods.
+
+```objc
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.conversationDelivery.numberOfObjects;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"ConversationTableViewCell";
+
+    ConversationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+
+    if (!cell) {
+        cell = [[ConversationTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+
+    // Set cells message body
+    [self configureCell:cell atIndexPath:indexPath];
+
+    return cell;
+}
+```
+
+That’s it!
+
 #### Groups
 
 
