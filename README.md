@@ -121,12 +121,50 @@ The first step to using the Cashew SDK is to register a new user. This is accomp
 		}
 
 		[self dismiss]; 
-	   });
-        }];
+	});
+}];
 ```
 
 #### Login and Account Creation
 
+Once the new account has been created the next step is to login to the Cashew server. This is accomplished by using the ```CNMUserServices``` class:
+
+```objc
+[CNMUserServices
+	authenticateUser:self.usernameTextField.text
+        andPassword:self.passwordTextField.text
+	withCompletion:^(CNMUser*user,NSError*error)
+        {
+	   dispatch_async(dispatch_get_main_queue(),^ 
+	   {
+		if(!error)
+		{
+			//Handle success
+		}
+		else
+		{
+		}
+	}); 
+}];
+```
+
+At this point we need to understand a tiny bit about the Loment Cashew architecture. The Cashew architecture allows a single user to have multiple independent accounts. In this way a single user can have a work account, a friends account, a family account, etc. But to use the system a user must have <i>at least one</i> account. Here we are creating a single account for a user. This only needs to be called once, not everytime we login. But it does need to be called after we login because we need to know what user to add the account to:
+
+```objc
+[CNMUserServices 
+	addCashewUsername:name 
+	forUser:self.user 
+	withCompletion:^(CNMUser *user, NSError *error)
+        {
+	  dispatch_async(dispatch_get_main_queue(), ^{ 
+		if (!error)
+		{
+		} else {
+			// Handle Failure
+		} 
+	});
+}];
+```
 
 #### Messaging
 
