@@ -416,4 +416,191 @@ That’s it!
 
 #### Groups
 
+The first step is to create a group with a name and atleast one participant and the person who creates group will be the Main Admin (Owner) of that group:
+
+```objc
+[CNMMessagingServices createNewGroupConversation:groupName withContacts:groupMembers withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+     
+        if (!error)
+        {
+            //Handle success
+        }
+        else
+        {
+            //Handle failure
+        }
+      
+}];
+```
+
+Now that the group is created we can change the Name of the group using below group call:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation newName:newGroupName 
+    withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+    
+        if (!error)
+        {
+            //Handle success
+        }
+        else
+        {
+            //Handle failure
+        }
+
+}];
+```
+
+Now that the group is created we can change the Owner of the group using below group call:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation newOwner:self.selectedcontacts withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+
+Now that the group is created we can add members to the group using below group call:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation addMembers:groupMembers withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+Now that the group is created and we added members to the group if we want to remove members from Group we can do that using below call:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation removeMembers:self.selectedcontacts withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+Now that the group is created and we added members to make some one as Admin on the group then we can do that using below call. This is valid operation if it is performed by group admin:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation addAdmins:self.selectedcontacts withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+Now that the group is created and we added members and made some of the members as Admins and we want to remove them from Admin list then we can do that using below call. This is Valid operation if it is performed by Main admin of group:
+
+```objc
+[CNMMessagingServices updateConversation:self.conversation removeAdmins:self.selectedcontacts withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+When a group is created it is created by default with option that Any member of the group can add new members to the group and if we don't want to happen then we can restrict that to only Main admin and Admins then we can do that using below call and this is a valid only if Main admin of the group performs this operation:
+
+```objc
+[CNMMessagingServices updateConversationFeaturesRemoved:self.conversation 
+    withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+
+```
+
+Now to give permission to all the members of group to add participants. this can be done using below call :
+
+```objc
+[CNMMessagingServices updateConversationFeaturesAdded:self.conversation 
+    withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+```
+
+You can leave Group using using below call. This is valid operation if the you are only a member not Main admin (or) Admin :
+
+```objc
+[CNMMessagingServices leaveConversation:self.conversation 
+    withCompletion:^(CNMConversation *conversation, NSError *error)
+{
+
+    if (!error)
+    {
+        //Handle success
+    }
+    else
+    {
+        //Handle failure
+    }
+
+}];
+
+```
+
 
