@@ -2,7 +2,7 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![CocoaPods](https://img.shields.io/cocoapods/v/SwiftyJSON.svg) ![Platform](https://img.shields.io/badge/platforms-iOS%208.0+-333333.svg)
 
-Carthage makes it easy to implement secure messaging into your app.
+Cashew makes it easy to implement secure messaging into your app.
 
 1. [Requirements](#requirements)
 2. [Integration](#integration)
