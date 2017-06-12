@@ -4,17 +4,17 @@
 
 Cashew makes it easy to implement secure messaging into your app.
 
-1. [Requirements](#requirements)
-2. [Integration](#integration)
+* [Requirements](#requirements)
+* [Integration](#integration)
    - [Installation](#installation)
    - [Setting up Xcode](#setting-up-xcode)
-3. [Documentation](#documentation)
-4. [Usage](#usage)
+* [Documentation](#documentation)
+* [Usage](#usage)
    - [Registration](#registration)
    - [Login and Account Creation](#login-and-account-creation)
    - [Messaging](#messaging)
    - [Groups](#groups)
-5. [License](#license)
+* [License](#license)
 
 ## Requirements
 
@@ -101,7 +101,7 @@ You can find the full documentation of Cashew [here](https://kuanfajardo.github.
 
 ## Usage
 
-#### Registration
+### Registration
 
 The first step to using the Cashew SDK is to register a new user. This is accomplished by calling ```registerUserWithName:``` and passing in valid name, password, email, phone number and country code:
 
@@ -126,7 +126,7 @@ The first step to using the Cashew SDK is to register a new user. This is accomp
 }];
 ```
 
-#### Login and Account Creation
+### Login and Account Creation
 
 Once the new account has been created the next step is to login to the Cashew server. This is accomplished by using the ```CNMUserServices``` class:
 
@@ -167,7 +167,7 @@ At this point we need to understand a tiny bit about the Loment Cashew architect
 }];
 ```
 
-#### Messaging
+### Messaging
 
 Now that we have our user created and logged in and the user has at least one cashew account associated with it, the next step is to start the message services. All Cashew messages are delivered via AMQP message queues, messages cannot be sent or received until the message queues are started. To start the message services, call ```startServiceForCashewAccount:```
 
@@ -415,9 +415,9 @@ Steps:
 
 That’s it!
 
-#### Groups
+### Groups
 
-The first step is to create a group with a name and atleast one participant and the person who creates group will be the Main Admin (Owner) of that group:
+The first step is to create a group with a name and at least one participant and the person who creates group will be the Main Admin (Owner) of that group:
 
 ```objc
 [CNMMessagingServices createNewGroupConversation:groupName withContacts:groupMembers withCompletion:^(CNMConversation *conversation, NSError *error)
